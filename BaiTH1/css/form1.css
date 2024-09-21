@@ -1,0 +1,34 @@
+body {
+    background-color: #b3ffb3;
+}
+.login-container {
+    padding: 20px;
+    background-color: #b3ffb3;
+}
+.login-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.login-container .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container label {
+    text-align: left;
+}
+
+.login-container input[type="text"],
+input[type="password"] {
+    margin: 0px 20px;
+}
+.login-container .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container .button-group button{
+    margin: 0px 10px;
+}

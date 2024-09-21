@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form5</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const input = document.getElementById('myInput');
+            input.addEventListener('blur', () => {
+                input.value = input.value.toUpperCase();
+            });
+
+            // Chuyển đổi thành chữ hoa khi nhấn phím Tab
+            input.addEventListener('keydown', (event) => {
+                if (event.key === 'Tab') {
+                    input.value = input.value.toUpperCase();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <form name="form1" action="" method="post/get">
+        <input type="text" name="text1" id="myInput" value="">
+    </form>
+</body>
+</html>
